@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <!-- Glassmorphism Card Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Dynamic / Animated Background Elements -->
+  <!-- Pulsing Orbs in Background -->
+  <g opacity="0.4">
+    <circle cx="150" cy="80" r="100" fill="#6366f1" filter="url(#glow)">
+      <animate attributeName="r" values="90;115;90" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="280" r="120" fill="#ec4899" filter="url(#glow)">
+      <animate attributeName="r" values="110;135;110" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Scanning / Capture Grid & Lines in Background -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" stroke-dasharray="8,8"/>
+    <line x1="0" y1="180" x2="1200" y2="180" stroke-dasharray="8,8"/>
+    <line x1="0" y1="300" x2="1200" y2="300" stroke-dasharray="8,8"/>
+    <line x1="200" y1="0" x2="200" y2="360" stroke-dasharray="8,8"/>
+    <line x1="600" y1="0" x2="600" y2="360" stroke-dasharray="8,8"/>
+    <line x1="1000" y1="0" x2="1000" y2="360" stroke-dasharray="8,8"/>
+  </g>
+
+  <!-- Animated Camera Crop Reticle Frame (Background Decorative Layer) -->
+  <g stroke="url(#accentGrad)" stroke-width="3" fill="none" opacity="0.7">
+    <!-- Top-Left Corner -->
+    <path d="M 60,90 L 60,60 L 90,60">
+      <animate attributeName="stroke-width" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top-Right Corner -->
+    <path d="M 1110,60 L 1140,60 L 1140,90">
+      <animate attributeName="stroke-width" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom-Left Corner -->
+    <path d="M 60,270 L 60,300 L 90,300">
+      <animate attributeName="stroke-width" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom-Right Corner -->
+    <path d="M 1110,300 L 1140,300 L 1140,270">
+      <animate attributeName="stroke-width" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Animated Laser Scan Ray -->
+  <line x1="40" y1="40" x2="1160" y2="40" stroke="#a855f7" stroke-width="2" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="y1" values="40;320;40" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="40;320;40" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Central Glassmorphism Card Frame for Text (Guarantees Text Foreground Visibility) -->
+  <rect x="180" y="55" width="840" height="250" rx="20" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" />
+
+  <!-- FOREGROUND CONTENT: Title & Subtitles (Completely Unobstructed) -->
+  <!-- Top Badge / Category Pill -->
+  <g transform="translate(600, 95)">
+    <rect x="-140" y="-16" width="280" height="32" rx="16" fill="url(#accentGrad)" opacity="0.9"/>
+    <text x="0" y="5" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="middle">
+      📸 AWESOME ECOSYSTEM
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="168" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" text-anchor="middle" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.5))">
+    Awesome Screen Capture Utility
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="215" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="400" text-anchor="middle">
+    Curated SaaS Platforms &amp; High-Star Open-Source Screen Recorders
+  </text>
+
+  <!-- Feature Pills Footer inside Card -->
+  <g transform="translate(600, 260)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">
+    <!-- Tag 1 -->
+    <rect x="-240" y="-14" width="130" height="28" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="rgba(255,255,255,0.2)"/>
+    <text x="-175" y="4" fill="#38bdf8" text-anchor="middle">⚡ Screenshots</text>
+
+    <!-- Tag 2 -->
+    <rect x="-95" y="-14" width="130" height="28" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="rgba(255,255,255,0.2)"/>
+    <text x="-30" y="4" fill="#a78bfa" text-anchor="middle">🎥 Recorders</text>
+
+    <!-- Tag 3 -->
+    <rect x="50" y="-14" width="105" height="28" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="rgba(255,255,255,0.2)"/>
+    <text x="102" y="4" fill="#f472b6" text-anchor="middle">✏️ Annotate</text>
+
+    <!-- Tag 4 -->
+    <rect x="170" y="-14" width="95" height="28" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="rgba(255,255,255,0.2)"/>
+    <text x="217" y="4" fill="#4ade80" text-anchor="middle">🔍 OCR &amp; AI</text>
+  </g>
+</svg>
