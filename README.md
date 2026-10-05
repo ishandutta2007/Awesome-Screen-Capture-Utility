@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Screen-Capture-Utility/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Screen-Capture-Utility?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Screen-Capture-Utility/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Screen-Capture-Utility?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Screen-Capture-Utility/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Screen-Capture-Utility?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Screen-Capture-Utility/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Screen-Capture-Utility?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -56,9 +56,9 @@ Below is a comparison of commercial screen capture and recording tools, sorted i
 
 ## 🔓 Open-Source GitHub Projects
 
-The open-source screen capture ecosystem features top-rated tools for recording, editing, and annotation. The repository table below is sorted by **GitHub Star Count (descending)**.
+The open-source screen capture ecosystem features top-rated tools for recording, editing, and annotation. The repository table below is sorted by **GitHub Stars_Count (descending)**.
 
-| Project | Description | License | Star Count Badge |
+| Project | Description | License | Stars_Count Badge |
 | :--- | :--- | :--- | :--- |
 | **[OBS Studio](https://github.com/obsproject/obs-studio)** 🎥 | Free and open-source software for video recording and live streaming with scene composition and audio mixing. | GPL-2.0 | <a href="https://github.com/obsproject/obs-studio/stargazers"><img src="https://img.shields.io/github/stars/obsproject/obs-studio?style=social&color=white" alt="OBS Studio Stars"/></a> |
 | **[ShareX](https://github.com/ShareX/ShareX)** 🚀 | Comprehensive Windows screen capture suite featuring scrolling capture, OCR, GIF creation, screen recording, and 80+ destination uploads. | GPL-3.0 | <a href="https://github.com/ShareX/ShareX/stargazers"><img src="https://img.shields.io/github/stars/ShareX/ShareX?style=social&color=white" alt="ShareX Stars"/></a> |
@@ -91,7 +91,7 @@ The open-source screen capture ecosystem features top-rated tools for recording,
 Contributions are welcome! Please follow these guidelines:
 1. Fork the repository.
 2. Edit `README.md` keeping formatting consistent.
-3. Ensure links, licenses, and star counts are updated.
+3. Ensure links, licenses, and Stars_Counts are updated.
 4. Submit a Pull Request describing your changes.
 
 Check out [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated lists!
